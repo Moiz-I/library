@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  library
+  <button type="button" id="addBook">Add Book</button>
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>some text</p>
+      <div id="inputs" onclick=>
+        <input type="text" id="title" value="Title">
+        <input type="text" id="author" value="Author">
+        <input type="number" id="pages" value="Pages read">
+        <div id=is-Read>
+          <label for="is-read">Has read?</label>
+          <input type="checkbox" id="hasRead">
+        </div>
+      </div>
+      <button type="button" id="submit">Submit</button>
+    </div>
+  </div>
+  <div class="books-grid" id="booksGrid"></div>
+  <script src="script.js" charset="utf-8"></script>
+</body>
+</html>
